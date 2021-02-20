@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Image-Figures-Pictures</title>
+    <!-- https://validator.w3.org/nu/ -->
+    <style>
+        p img {
+            width: 100px;
+        }
+
+        img {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>HTML Image-Figures-Pictures</header>
+    <main>
+        <p><img src="avatar.png" alt="deadpool"></p>
+        <p>
+            <figure>
+                <img src="archer-bob.jpg" alt="Bob belcher and sterling Archer">
+                <figcaption>Bob belcher and sterling Archer</figcaption>  
+            </figure>
+        </p>
+        <p>
+            <picture>
+                <source srcset="archer-bob.jpg" media="(min-width: 800px)">
+                <source srcset="avatar.png" media="(max-width: 600px)">    
+                <img src="batman.png" alt="batman">
+            </picture>
+        </p>
+    </main>
+</body>
+</html>

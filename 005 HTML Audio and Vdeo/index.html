@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> video{
+        width: 384px;
+        height: 288px;
+    }
+        /*
+            Very little can be styled on the video controls.
+            You are better off creating your other own controls
+            using HTML and CSS. Then remove the controls attribute from the <video> element and add some Javascript to control the video playback.
+            */
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Heading</h1>
+        <audio controls preload="metadata" crossorigin="use-credentials" loop>
+            <source src="fight-club.mp3" type="audio/mp3">
+            <source src="fight-club.wav" type="audio/wav">
+            <p><a href="fight-club.mp3" download="">Download the MP3 file</a></p>
+        </audio>
+    </div>
+
+    <div>
+        <h1>Heading</h1>
+        <!-- Miro Video Converter: http://www.mirovideoconverter.com/ 
+        CanIUse.com video format support: https://caniuse.com/#search=ogg-->
+        <video controls preload="metadata" muted crossorigin="anonymous" loop poster="lion.jpg">
+            <source src="lion-sample.webm" type="video/webm">
+            <source src="lion-sample.ogv" type="video/ogv">
+            <source src="lion-sample.mp4" type="video/mp4">
+            <source src="lion-sample.3pg" type="video/3pg">
+            <p><a href="fight-club.mp3" download="">Download the Video</a></p>
+        </audio>
+    </div>
+
+    
+</body>
+</html>
